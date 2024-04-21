@@ -1,4 +1,4 @@
-function PricingGrids() {
+function PricingCards() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-slate-800">
       <div className="my-6 flex flex-col space-y-6 md:my-0 md:flex-row md:space-x-6 md:space-y-0">
@@ -222,4 +222,4 @@ function PricingGrids() {
   );
 }
 
-export default PricingGrids;
+export default PricingCards;
