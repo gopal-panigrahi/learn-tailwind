@@ -3,6 +3,7 @@ import Home from "./Home";
 import "./App.css";
 import EmailSubscribe from "./projects/EmailSubscribe";
 import PricingGrids from "./projects/PricingGrids";
+import ProductModal from "./projects/ProductModal";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/project-1" element={<EmailSubscribe />} />
         <Route path="/project-2" element={<PricingGrids />} />
+        <Route path="/project-3" element={<ProductModal />} />
       </Routes>
     </BrowserRouter>
   );
