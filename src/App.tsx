@@ -4,6 +4,7 @@ import "./App.css";
 import EmailSubscribe from "./projects/EmailSubscribe";
 import PricingCards from "./projects/PricingCards";
 import ProductModal from "./projects/ProductModal";
+import ImageGallery from "./projects/ImageGallery";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path="/project-1" element={<EmailSubscribe />} />
         <Route path="/project-2" element={<PricingCards />} />
         <Route path="/project-3" element={<ProductModal />} />
+        <Route path="/project-4" element={<ImageGallery />} />
       </Routes>
     </BrowserRouter>
   );
