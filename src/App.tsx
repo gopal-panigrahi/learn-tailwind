@@ -5,6 +5,7 @@ import EmailSubscribe from "./projects/EmailSubscribe";
 import PricingCards from "./projects/PricingCards";
 import ProductModal from "./projects/ProductModal";
 import ImageGallery from "./projects/ImageGallery";
+import LoginModal from "./projects/LoginModal";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/project-2" element={<PricingCards />} />
         <Route path="/project-3" element={<ProductModal />} />
         <Route path="/project-4" element={<ImageGallery />} />
+        <Route path="/project-5" element={<LoginModal />} />
       </Routes>
     </BrowserRouter>
   );
