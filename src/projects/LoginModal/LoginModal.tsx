@@ -5,26 +5,25 @@ import bg from "./assets/image.jpg";
 function LoginModal() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-rose-50">
-      {/* Card */}
-      <div className="relative flex rounded-lg bg-white shadow-xl md:flex-row">
-        <div className="flex flex-col space-y-4 p-12">
-          <h1 className="text-4xl font-bold">Log In</h1>
-          <div className="text-sm font-light text-gray-500">
+      <div className="relative m-6 flex flex-col space-y-10 rounded-2xl bg-white shadow-2xl md:m-0 md:flex-row md:space-y-0">
+        <div className="p-6 md:p-20">
+          <h2 className="mb-5 font-mono text-4xl font-bold">Log In</h2>
+          <p className="mb-12 max-w-sm font-sans font-light text-gray-600">
             Log in to your account to upload or download pictures, videos or
             music.
-          </div>
+          </p>
+
           <input
             type="text"
+            className="w-full rounded-md border border-gray-300 p-6 placeholder:font-sans placeholder:font-light"
             placeholder="Enter your email address"
-            className="rounded-lg border border-gray-300 p-5 placeholder:text-gray-400"
           />
 
-          <div className="flex flex-col space-y-4 md:flex-row md:items-center md:justify-between md:space-y-0">
-            <div className="text-center font-light text-cyan-700">
-              Forgot Password
-            </div>
-            <button className="flex flex-row items-center justify-center gap-3 rounded-md bg-cyan-700 p-5 text-white">
-              <div className="text-lg">Next</div>
+          <div className="mt-6 flex flex-col items-center justify-between space-y-6 md:flex-row md:space-y-0">
+            <div className="font-thin text-cyan-700">Forgot Password</div>
+
+            <button className="flex w-full items-center justify-center space-x-4 rounded-md border bg-cyan-700 p-6 px-9 font-sans font-bold text-white shadow-sm shadow-cyan-100 transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-90 hover:shadow-lg md:w-auto">
+              <span>Next</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="w-7"
@@ -43,26 +42,42 @@ function LoginModal() {
             </button>
           </div>
 
-          <div className="border-b border-gray-300 pt-6"></div>
+          <div className="mt-12 border-b border-b-gray-300"></div>
 
-          <div className="text-center text-sm text-gray-500">
+          <p className="py-6 text-center text-sm font-thin text-gray-400">
             or log in with
-          </div>
-          <div className="flex flex-col space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-            <button className="flex w-full items-center justify-center gap-4 rounded-md border border-gray-300 p-3 font-light hover:-translate-y-1 hover:shadow-lg">
+          </p>
+
+          <div className="flex flex-col space-x-0 space-y-6 md:flex-row md:space-x-4 md:space-y-0">
+            <button className="flex items-center justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg md:w-1/2">
               <img src={facebook} alt="" className="w-9" />
-              Facebook
+              <span className="font-thin">Facebook</span>
             </button>
-            <button className="flex w-full items-center justify-center gap-4 rounded-md border border-gray-300 p-3 font-light hover:-translate-y-1 hover:shadow-lg">
+
+            <button className="flex items-center justify-center space-x-3 rounded border border-gray-300 py-2 shadow-sm transition duration-150 hover:-translate-y-0.5 hover:bg-opacity-30 hover:shadow-lg md:w-1/2">
               <img src={google} alt="" className="w-9" />
-              Google
+              <span className="font-thin">Google</span>
             </button>
           </div>
         </div>
 
-        <img src={bg} alt="" className="hidden w-72 md:block" />
-        <div className="absolute right-2 top-2 flex h-8 w-8 items-center justify-center rounded-full bg-gray-200 text-black hover:-translate-y-1 md:bg-white">
-          <p>X</p>
+        <img src={bg} alt="" className="img hidden w-[430px] md:block" />
+
+        <div className="group absolute -top-5 right-4 flex h-10 w-10 items-center justify-center rounded-full bg-gray-200 transition duration-150 hover:-translate-y-0.5 hover:cursor-pointer md:top-4 md:bg-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-6 w-6 text-black group-hover:text-gray-600"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
         </div>
       </div>
     </div>
